@@ -3,73 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ton Nom – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio – Ton Nom</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Ton Nom</h1>
-    <p>Étudiant en informatique – Développement & Informatique graphique</p>
-    <nav>
-      <a href="https://github.com/tonpseudo" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
-      <a href="cv/CV.pdf" target="_blank">CV</a>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="img-hero">
+      <img src="assets/images/header.png" alt="">
+    </div>
+    <div class="title-hero">
+      <h1>HILAIRE Noah</h1>
+      <p>Étudiant en informatique — Développement Web & Informatique graphique</p>
+      <div class="text-hero">
+        <p>Enthousiaste étudiant en développement informatique, je m'immerge pleinement dans mon parcours de Licence. Ma passion pour la création et la résolution de problèmes se reflète dans ma collaboration efficace au sein d'équipes dédiées à la concrétisation de projets.</p>
+        <p>Polyvalence dans les Technologies Web et de Jeu</p>
+        <p>Mon bagage technique en développement informatique est diversifié. Je manie avec aisance HTML, CSS, JavaScript et PHP pour donner vie à des interfaces interactives. Parallèlement, je m'aventure dans l'univers du jeu, explorant les potentialités offertes par Python, Java, C et C++ pour concevoir des jeux captivants.</p>
+        <p>Méthodologies Agile et Gestion de Projet</p>
+        <p>Guidé par les méthodologies Agile, je suis familiarisé avec une approche de travail itérative et collaborative, assurant ainsi la flexibilité et l'efficacité dans la réalisation de projets. La gestion de projet est une composante essentielle de mon processus de travail, et j'applique ces principes à chaque étape du développement.</p>
+      </div>
+    </div>
+
+
+
+
+
   </header>
 
-  <section id="about">
-    <h2>À propos</h2>
-    <p>
-      Étudiant en informatique à Lyon 1, intéressé par le développement logiciel,
-      l’informatique graphique, le rendu 2D/3D et les systèmes interactifs.
-      Je recherche actuellement un stage de 3 mois.
-    </p>
-  </section>
+  <!-- FILTRES -->
+  <div class="filters">
+    <button data-filter="all" class="active">Tous</button>
+    <button data-filter="shader">Shader et OpenGL</button>
+    <button data-filter="cpp">C++</button>
+    <button data-filter="c">C#</button>
+    <button data-filter="java">Java</button>
+    <button data-filter="python">Python</button>
+    <button data-filter="javascript">JavaScript</button>
+  </div>
 
-  <section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-      <li><strong>Langages :</strong> C, C++, Python, JavaScript</li>
-      <li><strong>Graphique :</strong> OpenGL, SFML, WebGL</li>
-      <li><strong>Web :</strong> HTML, CSS, JavaScript</li>
-      <li><strong>Outils :</strong> Git, CMake, Linux</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projets</h2>
-
-    <div class="project">
-      <h3>Moteur 2D en C++</h3>
-      <p>
-        Développement d’un moteur 2D basé sur SFML avec gestion des entités,
-        rendu, scènes et architecture modulaire.
-      </p>
-      <p class="tech">C++ • SFML • CMake</p>
-      <a href="https://github.com/tonpseudo/moteur2d" target="_blank">Voir le projet</a>
+  <!-- PROJETS -->
+  <main>
+    <div class="project" data-lang="cpp">
+      <div class="content">
+        <h2>Shader et OpenGL</h2>
+      </div>
+      <div class="project-list">
+        <div class="project-block">
+          <div class="project-image">
+            <img class="materialboxed" width="650" src="assets/images/test.jpg">
+          </div>
+          <div class="project-content">
+            <p class="quote">
+              “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+            </p>
+            <span class="tech">C++ • OpenGL • Informatique graphique</span>
+          </div>
+        </div>
+        <div class="project-block">
+          <div class="project-image">
+            <img class="materialboxed" width="650" src="assets/images/test.jpg">
+          </div>
+          <div class="project-content">
+            <p class="quote">
+              “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+            </p>
+            <span class="tech">C++ • OpenGL • Informatique graphique</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="project">
-      <h3>Rendu OpenGL</h3>
-      <p>
-        Projet de rendu 3D : shaders, caméra, éclairage et chargement de maillages.
-      </p>
-      <p class="tech">C++ • OpenGL • GLSL</p>
-      <a href="https://github.com/tonpseudo/opengl-project" target="_blank">Voir le projet</a>
+    <div class="project" data-lang="cpp">
+      <div class="content">
+        <h2>Shader et OpenGL</h2>
+      </div>
+      <div class="project-block">
+        <div class="project-image">
+          <img class="materialboxed" width="650" src="assets/images/test.jpg">
+        </div>
+
+        <div class="project-content">
+          <p class="quote">
+            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+          </p>
+          <span class="tech">C++ • OpenGL • Informatique graphique</span>
+        </div>
+      </div>
     </div>
 
-  </section>
+    <div class="project" data-lang="cpp">
+      <div class="content">
+        <h2>Shader et OpenGL</h2>
+      </div>
+      <div class="project-block">
+        <div class="project-image">
+          <img class="materialboxed" width="650" src="assets/images/test.jpg">
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : ton.email@mail.com</p>
-    <p>LinkedIn : <a href="https://linkedin.com/in/tonprofil">tonprofil</a></p>
-  </section>
+        <div class="project-content">
+          <p class="quote">
+            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+          </p>
+          <span class="tech">C++ • OpenGL • Informatique graphique</span>
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    <p>© Ton Nom – 2026</p>
-  </footer>
+    <div class="project" data-lang="cpp">
+      <div class="content">
+        <h2>Shader et OpenGL</h2>
+      </div>
+      <div class="project-block">
+        <div class="project-image">
+          <img class="materialboxed" width="650" src="assets/images/test.jpg">
+        </div>
 
+        <div class="project-content">
+          <p class="quote">
+            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+          </p>
+          <span class="tech">C++ • OpenGL • Informatique graphique</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project" data-lang="cpp">
+      <div class="content">
+        <h2>Shader et OpenGL</h2>
+      </div>
+      <div class="project-block">
+        <div class="project-image">
+          <img class="materialboxed" width="650" src="assets/images/test.jpg">
+        </div>
+
+        <div class="project-content">
+          <p class="quote">
+            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+          </p>
+          <span class="tech">C++ • OpenGL • Informatique graphique</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project" data-lang="cpp">
+      <div class="content">
+        <h2>Shader et OpenGL</h2>
+      </div>
+      <div class="project-list">
+        <div class="project-block">
+          <div class="project-image">
+            <img class="materialboxed" width="650" src="assets/images/test.jpg">
+          </div>
+          <div class="project-content">
+            <p class="quote">
+              “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
+            </p>
+            <span class="tech">C++ • OpenGL • Informatique graphique</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="button-bottom-link">
+      <a class="waves-effect waves-light btn-large" href="https://www.linkedin.com/in/noah-hilaire-99b3b925a/">LinkedIn</a>
+    </div>
+    <div class="button-bottom-CV">
+      <a class="waves-effect waves-light btn-large" href="HILAIRE_Noah_CV.pdf" download="">CV</a>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
