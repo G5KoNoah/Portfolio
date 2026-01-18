@@ -1,7 +1,14 @@
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
+  $('.carousel').carousel();
 });
+
+
+
+setInterval(function(){
+  $('.carousel').carousel('next')
+}, 5000);
 
 const projects = document.querySelectorAll(".project");
 

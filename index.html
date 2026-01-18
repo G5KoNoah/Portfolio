@@ -14,31 +14,32 @@
 
   <!-- HEADER -->
   <header class="hero">
-    <div class="img-hero">
-      <img src="assets/images/header.png" alt="">
-    </div>
-    <div class="title-hero">
-      <h1>HILAIRE Noah</h1>
-      <p>Étudiant en informatique — Développement Web & Informatique graphique</p>
-      <div class="text-hero">
-        <p>Enthousiaste étudiant en développement informatique, je m'immerge pleinement dans mon parcours de Licence. Ma passion pour la création et la résolution de problèmes se reflète dans ma collaboration efficace au sein d'équipes dédiées à la concrétisation de projets.</p>
-        <p>Polyvalence dans les Technologies Web et de Jeu</p>
-        <p>Mon bagage technique en développement informatique est diversifié. Je manie avec aisance HTML, CSS, JavaScript et PHP pour donner vie à des interfaces interactives. Parallèlement, je m'aventure dans l'univers du jeu, explorant les potentialités offertes par Python, Java, C et C++ pour concevoir des jeux captivants.</p>
-        <p>Méthodologies Agile et Gestion de Projet</p>
-        <p>Guidé par les méthodologies Agile, je suis familiarisé avec une approche de travail itérative et collaborative, assurant ainsi la flexibilité et l'efficacité dans la réalisation de projets. La gestion de projet est une composante essentielle de mon processus de travail, et j'applique ces principes à chaque étape du développement.</p>
+    <div class="row hero-row">
+      <div class="col l6 s12">
+        <div class="img-hero">
+          <img src="assets/images/header.png" alt="">
+        </div>
+      </div>
+      <div class="col l6 s12 ">
+        <div class="title-hero">
+          <h1>HILAIRE Noah</h1>
+          <p style="font-weight: bold;">Étudiant en informatique — Développement Web & Informatique graphique</p>
+          <div class="text-hero">
+            <p>Enthousiaste étudiant en développement informatique, je m'immerge pleinement dans mon parcours de Licence. Ma passion pour la création et la résolution de problèmes se reflète dans ma collaboration efficace au sein d'équipes dédiées à la concrétisation de projets.</p>
+            <p style="font-weight: bold;">Polyvalence dans les Technologies Web et de Jeu</p>
+            <p>Mon bagage technique en développement informatique est diversifié. Je manie avec aisance HTML, CSS, JavaScript et PHP pour donner vie à des interfaces interactives. Parallèlement, je m'aventure dans l'univers du jeu, explorant les potentialités offertes par Python, Java, C et C++ pour concevoir des jeux captivants.</p>
+            <p style="font-weight: bold;">Méthodologies Agile et Gestion de Projet</p>
+            <p>Guidé par les méthodologies Agile, je suis familiarisé avec une approche de travail itérative et collaborative, assurant ainsi la flexibilité et l'efficacité dans la réalisation de projets. La gestion de projet est une composante essentielle de mon processus de travail, et j'applique ces principes à chaque étape du développement.</p>
+          </div>
+        </div>
       </div>
     </div>
-
-
-
-
-
   </header>
 
   <!-- FILTRES -->
   <div class="filters">
     <button data-filter="all" class="active">Tous</button>
-    <button data-filter="shader">Shader et OpenGL</button>
+    <button data-filter="shader">DirectX et OpenGL</button>
     <button data-filter="cpp">C++</button>
     <button data-filter="c">C#</button>
     <button data-filter="java">Java</button>
@@ -48,134 +49,87 @@
 
   <!-- PROJETS -->
   <main>
-    <div class="project" data-lang="cpp">
+    <div class="project" data-lang="shader">
       <div class="content">
-        <h2>Shader et OpenGL</h2>
+        <h2>DirectX et OpenGL</h2>
       </div>
       <div class="project-list">
-        <div class="project-block">
-          <div class="project-image">
-            <img class="materialboxed" width="650" src="assets/images/test.jpg">
+        <div class="row valign-wrapper" >
+          <div class="col l6">
+            <div class="project-image">
+              <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="assets/images/shader/image1.png"></a>
+                <a class="carousel-item" href="#two!"><img  src="assets/images/shader/image2.png"></a>
+                <a class="carousel-item" href="#three!"><img src="assets/images/shader/image3.png"></a>
+              </div>
+            </div>
           </div>
-          <div class="project-content">
-            <p class="quote">
-              “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-            </p>
-            <span class="tech">C++ • OpenGL • Informatique graphique</span>
-          </div>
-        </div>
-        <div class="project-block">
-          <div class="project-image">
-            <img class="materialboxed" width="650" src="assets/images/test.jpg">
-          </div>
-          <div class="project-content">
-            <p class="quote">
-              “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-            </p>
-            <span class="tech">C++ • OpenGL • Informatique graphique</span>
+          <div class="col l6">
+            <div class="project-content">
+              <p class="quote">
+                Scène réaliste avec insertions de models 3D, shader su ciel et de lumière.
+              </p>
+              <span class="tech">C++ • OpenGL • GLSL</span>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="row valign-wrapper" >
+          <div class="col l6">
+            <div class="project-image">
+              <video controls>
+                <source src="assets/video/directx.mp4" type="video/mp4">
+              </video>
 
-    <div class="project" data-lang="cpp">
-      <div class="content">
-        <h2>Shader et OpenGL</h2>
-      </div>
-      <div class="project-block">
-        <div class="project-image">
-          <img class="materialboxed" width="650" src="assets/images/test.jpg">
-        </div>
-
-        <div class="project-content">
-          <p class="quote">
-            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-          </p>
-          <span class="tech">C++ • OpenGL • Informatique graphique</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="project" data-lang="cpp">
-      <div class="content">
-        <h2>Shader et OpenGL</h2>
-      </div>
-      <div class="project-block">
-        <div class="project-image">
-          <img class="materialboxed" width="650" src="assets/images/test.jpg">
-        </div>
-
-        <div class="project-content">
-          <p class="quote">
-            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-          </p>
-          <span class="tech">C++ • OpenGL • Informatique graphique</span>
+            </div>
+          </div>
+          <div class="col l6">
+            <div class="project-content">
+              <p class="quote">
+                Moteur et son jeu Space Shooter
+              </p>
+              <span class="tech">C++ • DirectX12</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="project" data-lang="cpp">
-      <div class="content">
-        <h2>Shader et OpenGL</h2>
-      </div>
-      <div class="project-block">
-        <div class="project-image">
-          <img class="materialboxed" width="650" src="assets/images/test.jpg">
-        </div>
-
-        <div class="project-content">
-          <p class="quote">
-            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-          </p>
-          <span class="tech">C++ • OpenGL • Informatique graphique</span>
-        </div>
-      </div>
-    </div>
 
     <div class="project" data-lang="cpp">
       <div class="content">
-        <h2>Shader et OpenGL</h2>
-      </div>
-      <div class="project-block">
-        <div class="project-image">
-          <img class="materialboxed" width="650" src="assets/images/test.jpg">
-        </div>
-
-        <div class="project-content">
-          <p class="quote">
-            “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-          </p>
-          <span class="tech">C++ • OpenGL • Informatique graphique</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="project" data-lang="cpp">
-      <div class="content">
-        <h2>Shader et OpenGL</h2>
+        <h2>C++</h2>
       </div>
       <div class="project-list">
-        <div class="project-block">
-          <div class="project-image">
-            <img class="materialboxed" width="650" src="assets/images/test.jpg">
+        <div class="row valign-wrapper" >
+          <div class="col l6">
+            <div class="project-image">
+              <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="assets/images/shader/image1.png"></a>
+                <a class="carousel-item" href="#two!"><img  src="assets/images/shader/image2.png"></a>
+                <a class="carousel-item" href="#three!"><img src="assets/images/shader/image3.png"></a>
+              </div>
+            </div>
           </div>
-          <div class="project-content">
-            <p class="quote">
-              “THERE ARE WAY TOO MANY BIRDS FLYING AROUND IN PERFECT FORMATION.”
-            </p>
-            <span class="tech">C++ • OpenGL • Informatique graphique</span>
+          <div class="col l6">
+            <div class="project-content">
+              <p class="quote">
+                Scène réaliste avec insertions de models 3D, shader su ciel et de lumière.
+              </p>
+              <span class="tech">C++ • OpenGL • GLSL</span>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
+
+
 
 
     <div class="button-bottom-link">
       <a class="waves-effect waves-light btn-large" href="https://www.linkedin.com/in/noah-hilaire-99b3b925a/">LinkedIn</a>
     </div>
     <div class="button-bottom-CV">
-      <a class="waves-effect waves-light btn-large" href="HILAIRE_Noah_CV.pdf" download="">CV</a>
+      <a class="waves-effect waves-light btn-large" href="assets/HILAIRE_Noah_CV.pdf" download="">CV</a>
     </div>
   </main>
   <script src="js/jquery.min.js"></script>
