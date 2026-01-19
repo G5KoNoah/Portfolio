@@ -1,13 +1,15 @@
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
-  $('.carousel').carousel();
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true,
+    duration: 200
+  });
 });
 
-
-
 setInterval(function(){
-  $('.carousel').carousel('next')
+  $('.carousel.carousel-slider').carousel('next');
 }, 5000);
 
 const projects = document.querySelectorAll(".project");

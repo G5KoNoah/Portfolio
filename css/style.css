@@ -1,46 +1,34 @@
-/* RESET */
+/* ========== RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* GLOBAL */
+/* ========== GLOBAL ========== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(17, 17, 23);
   color: #DF5E56;
 }
 
-/* HERO */
+/* ========== HERO ========== */
 .hero {
   height: 100vb;
 }
 
-/* Desktop seulement */
-@media (min-width: 993px) {
-  .hero-row {
-    display: flex;
-    align-items: center;
-  }
+
+
+.img-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Mobile */
-@media (max-width: 992px) {
-  .img-hero {
-    margin-bottom: 2rem;
-  }
-}
-
-.title-hero{
+.title-hero {
   text-align: center;
   background-color: rgba(17, 17, 23, 0.868);
   padding: 2%;
-}
-
-.img-hero img{
-  width: 100%;
-  
 }
 
 .title-hero h1 {
@@ -55,16 +43,16 @@ body {
   color: #f2e8c4;
 }
 
-.text-hero{
+.text-hero {
   text-align: justify;
   padding: 2%;
 }
 
-.text-hero p{
+.text-hero p {
   font-size: 1.2rem;
 }
 
-/* FILTRES */
+/* ========== FILTRES ========== */
 .filters {
   position: sticky;
   top: 0;
@@ -74,6 +62,7 @@ body {
   justify-content: center;
   gap: 1rem;
   z-index: 10;
+  flex-wrap: wrap;
 }
 
 .filters button {
@@ -91,10 +80,9 @@ body {
   color: black;
 }
 
-/* PROJETS */
+/* ========== PROJETS ========== */
 .project {
   display: block;
-  align-items: center;
   padding: 4rem;
   opacity: 0;
   transform: translateY(60px);
@@ -106,7 +94,6 @@ body {
   transform: translateY(0);
 }
 
-
 .project:nth-child(odd) {
   background: #0b141a;
 }
@@ -115,47 +102,75 @@ body {
   background-color: #030507;
 }
 
-/* CONTENU */
+.project .content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
 
 .project-list {
   background: #162935a4;
   color: #f2e8c4;
   border-radius: 50px;
-  align-items: center;
 }
 
+.project-list .row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* IMAGE */
+/* ========== IMAGES & VIDÉOS ========== */
 .project-image {
-  overflow: hidden;
+  overflow: visible;
   padding: 5%;
 }
 
-.project-image video{
-  width: 100%
-}
-
-
-
-.project-image img {
+.project-image img,
+.project-image video {
+  width: 100%;
   border-radius: 50px;
 }
 
+.project-image img {
+  height: auto;
+}
 
+.project-image video {
+  max-height: 600px;
+  object-fit: cover;
+}
 
-/* TEXTE */
+/* ========== CAROUSEL ========== */
+.carousel.carousel-slider {
+  height: 500px !important;
+}
+
+.carousel .carousel-item {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ========== TEXTE ========== */
 .project-content {
   flex: 1;
-  padding: 8vw;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .quote {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 
@@ -166,28 +181,202 @@ body {
   opacity: 0.6;
 }
 
-.button-bottom-CV{
+/* ========== BOUTONS FIXES ========== */
+.button-bottom-CV,
+.button-bottom-link {
   position: fixed;
+  right: 2%;
+  z-index: 10;
+}
+
+.button-bottom-CV {
   bottom: 3%;
-  right: 2%;
-  z-index: 10;
-
 }
 
-.button-bottom-CV a{
-  background-color: black;
-  color: #DF5E56;
-  font-weight: bold;
-}
-.button-bottom-link{
-  position: fixed;
+.button-bottom-link {
   bottom: 10%;
-  right: 2%;
-  z-index: 10;
 }
 
-.button-bottom-link a{
+.button-bottom-CV a,
+.button-bottom-link a {
   background-color: black;
   color: #DF5E56;
   font-weight: bold;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (min-width: 993px) {
+  .hero-row {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Tablette */
+@media (max-width: 768px) {
+
+  .title-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .title-hero p {
+    font-size: 1.2rem;
+  }
+
+  .text-hero p {
+    font-size: 1rem;
+  }
+
+  .filters {
+    gap: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .filters button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .project {
+    padding: 2rem;
+  }
+
+  .project .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .project-list {
+    border-radius: 30px;
+  }
+
+  .project-list .row {
+    flex-direction: column;
+  }
+
+  .project-list .col {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .project-image {
+    padding: 3%;
+  }
+
+  .project-image img,
+  .project-image video {
+    border-radius: 30px;
+  }
+
+  .project-image video {
+    max-height: 450px;
+  }
+
+  .carousel.carousel-slider {
+    height: 400px !important;
+  }
+
+  .project-content {
+    padding: 2rem;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .tech {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .button-bottom-CV a,
+  .button-bottom-link a {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .title-hero h1 {
+    font-size: 2rem;
+  }
+
+  .title-hero p {
+    font-size: 1rem;
+  }
+
+  .text-hero p {
+    font-size: 0.9rem;
+  }
+
+  .filters button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .project .content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .project-list {
+    border-radius: 20px;
+  }
+
+  .project-image {
+    padding: 5%;
+  }
+
+  .project-image img,
+  .project-image video {
+    border-radius: 20px;
+  }
+
+  .carousel.carousel-slider {
+    height: 350px !important;
+  }
+
+  .carousel .carousel-item img {
+    object-fit: cover;
+    min-height: 300px;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.3rem;
+  }
+
+  .tech {
+    font-size: 0.7rem;
+  }
+
+  .button-bottom-CV,
+  .button-bottom-link {
+    right: 1%;
+  }
+
+  .button-bottom-CV {
+    bottom: 2%;
+  }
+
+  .button-bottom-link {
+    bottom: 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-hero {
+    margin-bottom: 2rem;
+  }
 }
