@@ -1,8 +1,7 @@
 # Portfolio – Hilaire Noah
 
 Étudiant en informatique à Lyon 1  
-Intéressé par le développement logiciel et l’informatique graphique.
+Intéressé par le développement web et l’informatique graphique.
 
-🌐 Portfolio : https://tonpseudo.github.io  
-💻 GitHub : https://github.com/tonpseudo  
-📫 Contact : ton.email@mail.com
+🌐 Portfolio : https://g5konoah.github.io/Portfolio
+📫 Contact : noah.hilaire@outlook.fr
