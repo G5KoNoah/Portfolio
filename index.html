@@ -3,258 +3,285 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - HILAIRE Noah</title>
-  <link rel="icon" type="image/png" href="assets/images/icon_site.png">
+  <title>Noah Hilaire · Programmeur jeux vidéo</title>
+  <meta name="description" content="Portfolio de Noah Hilaire, étudiant à la maîtrise en informatique (jeux vidéo) à l'UQAC. Programmation gameplay et moteur : Unity, Unreal, C++, DirectX 12. Recherche un stage à partir de juillet 2027." />
+  <meta property="og:title" content="Noah Hilaire · Programmeur jeux vidéo" />
+  <meta property="og:description" content="Programmation gameplay & moteur — Unity, Unreal, C++, DirectX 12. Recherche un stage à partir de juillet 2027." />
+  <meta property="og:image" content="assets/images/header.png" />
+  <meta name="theme-color" content="#0b0b14" />
+  <link rel="icon" type="image/png" href="assets/images/icon_site.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-
-  <!-- HEADER -->
-  <header class="hero">
-    <div class="row hero-row">
-      <div class="col l6 s12">
-        <div class="img-hero">
-          <img src="assets/images/header.png" alt="">
-        </div>
-      </div>
-      <div class="col l6 s12 ">
-        <div class="title-hero">
-          <h1>HILAIRE Noah</h1>
-          <p style="font-weight: bold;">Étudiant en informatique — Développement Web & Informatique graphique</p>
-          <div class="text-hero">
-            <p>Enthousiaste étudiant en développement informatique, je m'immerge pleinement dans mon parcours de Licence. Ma passion pour la création et la résolution de problèmes se reflète dans ma collaboration efficace au sein d'équipes dédiées à la concrétisation de projets. Tous mes projets sont partagés et stockés sur des plateformes GIT comme Github.</p>
-            <p style="font-weight: bold;">Polyvalence dans les Technologies Web et de Jeu</p>
-            <p>Mon bagage technique en développement informatique est diversifié. Je manie avec aisance HTML, CSS, JavaScript et PHP pour donner vie à des interfaces interactives. Parallèlement, je m'aventure dans l'univers du jeu, explorant les potentialités offertes par Python, Java, C, C++ et C# pour concevoir des jeux captivants.</p>
-            <p style="font-weight: bold;">Méthodologies Agile et Gestion de Projet</p>
-            <p>Guidé par les méthodologies Agile, je suis familiarisé avec une approche de travail itérative et collaborative, assurant ainsi la flexibilité et l'efficacité dans la réalisation de projets. La gestion de projet est une composante essentielle de mon processus de travail, et j'applique ces principes à chaque étape du développement.</p>
-          </div>
-        </div>
-      </div>
+  <!-- NAVIGATION -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Retour en haut">N<span>H</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/HILAIRE_Noah_CV.pdf" class="btn btn-small" download>CV</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- FILTRES -->
-  <div class="filters">
-    <button data-filter="all" class="active">Tous</button>
-    <button data-filter="shader">DirectX et OpenGL</button>
-    <button data-filter="cpp">C++</button>
-    <button data-filter="c">C#</button>
-    <button data-filter="java">Java</button>
-    <button data-filter="python">Python</button>
-  </div>
-
-  <!-- PROJETS -->
   <main>
-    <div class="project" data-lang="shader">
-      <div class="content">
-        <h2>DirectX et OpenGL</h2>
-      </div>
-      <div class="project-list">
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="assets/images/shader/image1.png"></a>
-                <a class="carousel-item" href="#two!"><img  src="assets/images/shader/image2.png"></a>
-                <a class="carousel-item" href="#three!"><img src="assets/images/shader/image3.png"></a>
-              </div>
-            </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="status"><span class="dot"></span>Recherche de stage · dès juillet 2027 · 675 h min.</p>
+          <h1>Noah Hilaire</h1>
+          <p class="role">Programmeur <strong>gameplay</strong> &amp; <strong>moteur</strong></p>
+          <p class="lead">
+            Étudiant à la maîtrise en informatique (jeux vidéo) à l'UQAC. J'ai réalisé de nombreux jeux en équipe comme en solo,
+            sur Unity et Unreal mais aussi sans moteur en C++, et j'ai développé mon propre moteur 3D et un moteur physique.
+            Je cherche un stage pour contribuer à un vrai projet en studio.
+          </p>
+          <div class="hero-cta">
+            <a href="#projets" class="btn">Voir mes projets</a>
+            <a href="assets/HILAIRE_Noah_CV.pdf" class="btn btn-ghost" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+              Télécharger mon CV
+            </a>
           </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Scène réaliste avec insertions de models 3D, shader su ciel et de lumière.
-              </p>
-              <span class="tech">C++ • OpenGL • GLSL</span>
-            </div>
-          </div>
+          <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/noah-hilaire-99b3b925a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.81c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.89h-4v-11Z"/></svg>
+            </a></li>
+            <li><a href="https://github.com/G5KoNoah" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            </a></li>
+            <li><a href="mailto:noah.hilaire@outlook.fr" aria-label="E-mail">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+            </a></li>
+          </ul>
         </div>
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <video controls>
-                <source src="assets/video/directx.mp4" type="video/mp4">
-              </video>
-
-            </div>
+        <div class="hero-photo reveal">
+          <div class="photo-frame">
+            <img src="assets/images/header.png" alt="Portrait de Noah Hilaire" width="1365" height="1400" />
           </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Moteur et son jeu Space Shooter
-              </p>
-              <span class="tech">C++ • DirectX12</span>
-            </div>
+          <div class="photo-badge">
+            <span class="badge-title">GraveDiggers</span>
+            <span class="badge-sub">Stage Unity · publié sur Steam</span>
           </div>
         </div>
       </div>
-    </div>
 
-
-    <div class="project" data-lang="cpp">
-      <div class="content">
-        <h2>C++</h2>
+      <div class="container">
+        <ul class="stats reveal">
+          <li><strong>15+</strong><span>projets de jeux</span></li>
+          <li><strong>1</strong><span>jeu publié sur Steam</span></li>
+          <li><strong>2</strong><span>moteurs maison (3D &amp; physique)</span></li>
+          <li><strong>6</strong><span>langages dont C++ &amp; C#</span></li>
+        </ul>
       </div>
-      <div class="project-list">
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="assets/images/c++/gwent1.png"></a>
-                <a class="carousel-item" href="#two!"><img  src="assets/images/c++/gwent2.png"></a>
-              </div>
-            </div>
-          </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Réalisation du jeu de carte GWENT de the Witcher 3
-              </p>
-              <span class="tech">C++ • SFML</span>
-            </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Projets</h2>
+          <p class="section-sub">Cliquez sur un projet pour voir les détails, images et vidéos.</p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="chips" id="type-filters" role="group" aria-label="Filtrer par type de projet"></div>
+          <div class="toolbar-selects">
+            <label class="select">
+              <span>Techno</span>
+              <select id="tech-filter" aria-label="Filtrer par technologie">
+                <option value="all">Toutes</option>
+              </select>
+            </label>
+            <label class="select">
+              <span>Trier</span>
+              <select id="sort" aria-label="Trier les projets">
+                <option value="featured">À la une</option>
+                <option value="az">Nom A → Z</option>
+                <option value="za">Nom Z → A</option>
+              </select>
+            </label>
           </div>
         </div>
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <img class="materialboxed"  width="100%" src="assets/images/c++/casse.png">
-            </div>
-          </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Réalisation du jeu CasseBrique
-              </p>
-              <span class="tech">C++ • SFML</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="project" data-lang="c">
-      <div class="content">
-        <h2>C#</h2>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="grid" id="project-grid"></div>
+        <p class="empty" id="empty" hidden>Aucun projet ne correspond à ces filtres.
+          <button class="link-btn" id="reset-filters">Réinitialiser</button>
+        </p>
       </div>
-      <div class="project-list">
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="assets/images/c/HIH1.png"></a>
-                <a class="carousel-item" href="#two!"><img  src="assets/images/c/HIH2.png"></a>
-              </div>
-            </div>
-          </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Création d'un jeu d'énigme
-              </p>
-              <span class="tech">C# • Unity Engine</span>
-            </div>
-          </div>
-        </div>
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <video controls>
-                <source src="assets/video/onepiece.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Réalisation d'un jeu tour par tour en ASCII dans la console
-              </p>
-              <span class="tech">C# </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="project" data-lang="java">
-      <div class="content">
-        <h2>Java</h2>
-      </div>
-      <div class="project-list">
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <img class="materialboxed"  width="100%" src="assets/images/java/small.png">
-            </div>
+    <!-- PARCOURS -->
+    <section class="section section-alt" id="parcours">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Parcours</p>
+          <h2>Expériences &amp; formation</h2>
+        </div>
+        <div class="two-cols">
+          <div class="reveal">
+            <h3 class="col-title">Expériences professionnelles</h3>
+            <ol class="timeline">
+              <li class="highlight">
+                <span class="when">Depuis mai 2026</span>
+                <h4>Stagiaire développeur Unity</h4>
+                <p class="where">Jeu <em>GraveDiggers</em></p>
+                <p>Développement d'un jeu coopératif en ligne publié sur Steam ; je poursuis le projet en parallèle de mes études.</p>
+              </li>
+              <li>
+                <span class="when">Été 2023 – automne 2026</span>
+                <h4>Équipier polyvalent</h4>
+                <p class="where">McDonald's · Canada &amp; France</p>
+                <p>Travail en équipe dans un environnement rapide, polyvalence entre les postes.</p>
+              </li>
+              <li>
+                <span class="when">Étés 2024, 2025 et 2026</span>
+                <h4>Préparateur de commandes pharmaceutiques</h4>
+                <p class="where">CERP · France</p>
+                <p>Préparation de commandes dans le respect strict des procédures et des délais.</p>
+              </li>
+            </ol>
           </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Réalisation du jeu de société SmallWorld avec SaveManager
-              </p>
-              <span class="tech">Java • Swing</span>
-            </div>
+          <div class="reveal">
+            <h3 class="col-title">Formation</h3>
+            <ol class="timeline">
+              <li class="highlight">
+                <span class="when">2026 – en cours</span>
+                <h4>Maîtrise en informatique, concentration jeux vidéo</h4>
+                <p class="where">UQAC · Saguenay, Canada</p>
+                <p>Conception et développement de jeux vidéo, moteurs de jeu, jeux mobiles.</p>
+              </li>
+              <li>
+                <span class="when">2024 – 2026</span>
+                <h4>Licence Informatique</h4>
+                <p class="where">Université Claude Bernard Lyon 1 · France</p>
+                <p>Algorithmique, structures de données, gestion de projet avec Git.</p>
+              </li>
+              <li>
+                <span class="when">2022 – 2024</span>
+                <h4>Bachelor Développeur, option Jeux Vidéo</h4>
+                <p class="where">Gaming Campus · Lyon, France</p>
+                <p>Développement de jeux vidéo (C++, C#, Unity) et de sites web.</p>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="project" data-lang="python">
-      <div class="content">
-        <h2>Python</h2>
-      </div>
-      <div class="project-list">
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <img class="materialboxed"  width="100%" src="assets/images/python/bird.png">
-            </div>
+    <!-- COMPÉTENCES -->
+    <section class="section" id="competences">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Boîte à outils</p>
+          <h2>Compétences</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Langages</h3>
+            <ul class="tags"><li>C++</li><li>C#</li><li>C</li><li>Python</li><li>Java</li><li>GLSL</li></ul>
           </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Réalisation d'un jeu shoot em up
-              </p>
-              <span class="tech">Python • Pygame</span>
-            </div>
+          <div class="skill-card reveal">
+            <h3>Moteurs &amp; bibliothèques</h3>
+            <ul class="tags"><li>Unity</li><li>Unreal Engine</li><li>DirectX 12</li><li>SFML</li><li>SDL</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Outils</h3>
+            <ul class="tags"><li>Git</li><li>Perforce</li><li>Visual Studio</li><li>VS Code</li><li>JetBrains Rider</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Web</h3>
+            <ul class="tags"><li>HTML/CSS/JS</li><li>Node.js</li><li>React</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Bases de données</h3>
+            <ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Langues</h3>
+            <ul class="langs">
+              <li><span>Français</span><span class="level">Langue maternelle</span></li>
+              <li><span>Anglais</span><span class="level">B2</span></li>
+            </ul>
           </div>
         </div>
-        <div class="row valign-wrapper" >
-          <div class="col l6">
-            <div class="project-image">
-              <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="assets/images/python/web1.png"></a>
-                <a class="carousel-item" href="#two!"><img  src="assets/images/python/web2.png"></a>
-              </div>
-            </div>
+
+        <h3 class="col-title reveal">Savoir-être</h3>
+        <ul class="soft-grid">
+          <li class="reveal"><strong>Esprit d'équipe</strong>Collaboration avec les artistes et les autres développeurs</li>
+          <li class="reveal"><strong>Communication</strong>Écoute des retours et des revues de code</li>
+          <li class="reveal"><strong>Rigueur</strong>Code propre, versionné et documenté</li>
+          <li class="reveal"><strong>Résolution de problèmes</strong>Goût du débogage et de l'optimisation</li>
+          <li class="reveal"><strong>Curiosité</strong>Veille sur les nouvelles technologies et techniques de jeu</li>
+          <li class="reveal"><strong>Autonomie</strong>Apprentissage rapide de nouveaux outils</li>
+          <li class="reveal"><strong>Respect des délais</strong>Livraison par sprints</li>
+          <li class="reveal"><strong>Centres d'intérêt</strong>Jeux vidéo (complétionniste, tous genres) · culture japonaise, mangas et anime</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Un stage en programmation gameplay ou moteur&nbsp;?</h2>
+            <p>Disponible à partir de <strong>juillet 2027</strong> pour un stage d'au moins <strong>675 heures</strong>. Actuellement basé à Saguenay (QC).</p>
           </div>
-          <div class="col l6">
-            <div class="project-content">
-              <p class="quote">
-                Réalisation d'un site web sur un jeu de brique avec gestion de base de données
-              </p>
-              <span class="tech">Python • SQL</span>
-            </div>
+          <div class="contact-actions">
+            <a class="contact-line" href="mailto:noah.hilaire@outlook.fr">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+              noah.hilaire@outlook.fr
+            </a>
+            <a class="contact-line" href="https://www.linkedin.com/in/noah-hilaire-99b3b925a/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.81c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.89h-4v-11Z"/></svg>
+              LinkedIn · noah-hilaire
+            </a>
+            <span class="contact-line">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Saguenay, QC · Canada
+            </span>
+            <a href="assets/HILAIRE_Noah_CV.pdf" class="btn" download>Télécharger mon CV</a>
           </div>
         </div>
       </div>
-    </div>
-
-
-
-
-    <div class="button-bottom-link">
-      <a class="waves-effect waves-light btn-large" href="https://www.linkedin.com/in/noah-hilaire-99b3b925a/">LinkedIn</a>
-    </div>
-    <div class="button-bottom-CV">
-      <a class="waves-effect waves-light btn-large" href="assets/HILAIRE_Noah_CV.pdf" download="">CV</a>
-    </div>
+    </section>
   </main>
-  <script src="js/jquery.min.js"></script>
 
-  <script src="js/materialize.min.js"></script>
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Noah Hilaire · Fait main en HTML, CSS &amp; JavaScript</div>
+  </footer>
+
+  <!-- MODALE PROJET -->
+  <dialog class="modal" id="modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">×</button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-thumbs" id="modal-thumbs"></div>
+      <div class="modal-body">
+        <div class="modal-types" id="modal-types"></div>
+        <h3 id="modal-title"></h3>
+        <p class="modal-summary" id="modal-summary"></p>
+        <ul class="modal-details" id="modal-details"></ul>
+        <ul class="tags" id="modal-tech"></ul>
+      </div>
+    </div>
+  </dialog>
+
   <script src="js/script.js"></script>
 </body>
 </html>
