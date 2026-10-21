@@ -1,4 +1,6 @@
 // ========== DONNÉES ==========
+const STEAM_URL = "https://store.steampowered.com/app/4383310/GraveDiggers/";
+
 const TYPES = {
   pro: { label: "Expérience pro", c1: "#ff4f7b", c2: "#f59e0b" },
   moteur: { label: "Unity & Unreal", c1: "#8b5cf6", c2: "#38bdf8" },
@@ -24,7 +26,8 @@ const PROJECTS = [
       "Mini-casino jouable : blackjack et machine à sous",
       "Conception et intégration des objets du jeu"
     ],
-    media: []
+    link: { label: "Voir sur Steam", url: STEAM_URL },
+    media: [{ type: "video", src: "assets/video/GraveDiggers.mp4" }]
   },
   {
     id: "dx12",
@@ -55,7 +58,7 @@ const PROJECTS = [
       "Animations et skeletal meshes",
       "Éclairage et mise en place de l'environnement"
     ],
-    media: []
+    media: [{ type: "video", src: "assets/video/BomberMan.mp4" }]
   },
   {
     id: "shaders",
@@ -106,7 +109,7 @@ const PROJECTS = [
       "Moteur physique écrit de zéro",
       "Visualisation des simulations avec Processing"
     ],
-    media: []
+    media: [{ type: "video", src: "assets/video/MoteurPhysique.mp4" }]
   },
   {
     id: "casse-ue",
@@ -120,7 +123,7 @@ const PROJECTS = [
       "Physique et collisions",
       "Ambiance, éclairage et environnement"
     ],
-    media: []
+    media: [{ type: "video", src: "assets/video/CasseBriques.mp4" }]
   },
   {
     id: "smallworld",
@@ -193,7 +196,7 @@ const PROJECTS = [
     rank: 13,
     summary: "Le célèbre puzzle 2048 en C++ avec SDL.",
     details: ["Logique de fusion des tuiles", "Rendu et entrées avec SDL"],
-    media: []
+    media: [{ type: "video", src: "assets/video/2048-demo.mp4" }]
   },
   {
     id: "demineur",
@@ -204,7 +207,7 @@ const PROJECTS = [
     rank: 14,
     summary: "Démineur classique en C avec SDL.",
     details: ["Génération de grille et propagation des cases vides", "Rendu et entrées avec SDL"],
-    media: []
+    media: [{ type: "video", src: "assets/video/demineur-demo.mp4" }]
   },
   {
     id: "morpion",
@@ -409,6 +412,13 @@ function openModal(project) {
 
   const details = document.getElementById("modal-details");
   details.replaceChildren(...project.details.map(d => el("li", "", d)));
+
+  const link = document.getElementById("modal-link");
+  link.hidden = !(project.link && project.link.url);
+  if (!link.hidden) {
+    link.href = project.link.url;
+    link.querySelector("span").textContent = project.link.label;
+  }
 
   const tech = document.getElementById("modal-tech");
   tech.replaceChildren(...project.tech.map(t => el("li", "", t)));

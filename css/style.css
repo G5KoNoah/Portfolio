@@ -374,6 +374,21 @@ svg .fill {
   box-shadow: var(--shadow);
 }
 
+a.photo-badge {
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+a.photo-badge:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.inline-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .badge-title {
   font-family: var(--font-title);
   font-weight: 700;
@@ -870,6 +885,14 @@ svg .fill {
   border-radius: 2px;
   background: var(--gradient);
   transform: rotate(45deg);
+}
+
+.modal-link {
+  margin-top: 1.5rem;
+}
+
+.modal-link[hidden] {
+  display: none;
 }
 
 /* ========== PARCOURS ========== */
